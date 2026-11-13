@@ -21,7 +21,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>8.0.4</version>
-            <scope>Steps</scope>
+            <scope>test</scope>
         </dependency>
 
         <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
@@ -29,7 +29,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>8.0.4</version>
-            <scope>Steps</scope>
+            <scope>test</scope>
         </dependency>
 
         <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
