@@ -1,9 +1,18 @@
 import io.cucumber.java.en.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Steps {
 
+    WebDriver driver;
+
     @Given("I am on hom page")
     public void i_am_on_hom_page() {
+        ChromeOptions options = new ChromeOptions();
+       // options.addArguments("--headless=new");
+        driver = new ChromeDriver();
+
 
     }
     @And("I click login button")
