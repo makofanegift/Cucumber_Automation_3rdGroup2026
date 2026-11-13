@@ -10,4 +10,4 @@ Feature: Login
 
     Examples:
       | username | password |
-      | admin@gmail | @12345678 |
+      | admin@gmail.com | @12345678 |
