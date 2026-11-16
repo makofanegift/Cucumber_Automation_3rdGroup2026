@@ -44,9 +44,4 @@ public class BrowserFactory {
 
     }
 
-    @Test
-    public void test(){
-        startBrowser("chrome", "https://ndosisimplifiedautomation.vercel.app/");
-    }
-
 }

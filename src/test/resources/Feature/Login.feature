@@ -1,6 +1,6 @@
 Feature: Login
   Scenario Outline: Login to Ndosi Automation Webside
-    Given I am on hom page
+    Given I am on home page
     And I click login button
     And I enter username <username>
     And I enter password <password>

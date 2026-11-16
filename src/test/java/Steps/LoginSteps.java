@@ -1,16 +1,21 @@
 package Steps;
 
+import Pages.HomePage;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.*;
 
-public class LoginSteps {
+public class LoginSteps extends Base {
 
-    @Given("I am on hom page")
-    public void i_am_on_hom_page() {
+
+    @Given("I am on home page")
+    public void i_am_on_home_page() {
+
+        homePage.verifyHomePageIsDisplayed();
 
     }
     @And("I click login button")
     public void i_click_login_button() {
+        homePage.clickLoginButton();
 
     }
     @And("I enter username (.*)$")
@@ -30,8 +35,8 @@ public class LoginSteps {
 
     }
 
-    @And("Verify Menu button exist")
-    public void verifyMenuButtonExist() {
-
-    }
+//    @And("Verify Menu button exist")
+//    public void verifyMenuButtonExist() {
+//
+//    }
 }
