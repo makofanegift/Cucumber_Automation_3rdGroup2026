@@ -28,10 +28,10 @@ public class BrowserFactory {
             case "edge":
                 driver = new EdgeDriver();
                 break;
-            case "Firefox":
+            case "firefox":
                 driver = new FirefoxDriver();
                 break;
-            case "Internet Explorer":
+            case "internet explorer":
                 driver = new InternetExplorerDriver();
                 break;
             default:
