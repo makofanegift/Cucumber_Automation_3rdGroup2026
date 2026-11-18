@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.testng.annotations.Test;
+
 
 import java.util.Locale;
 
@@ -28,10 +28,10 @@ public class BrowserFactory {
             case "edge":
                 driver = new EdgeDriver();
                 break;
-            case "Firefox":
+            case "firefox":
                 driver = new FirefoxDriver();
                 break;
-            case "Internet Explorer":
+            case "internet explorer":
                 driver = new InternetExplorerDriver();
                 break;
             default:
@@ -42,11 +42,6 @@ public class BrowserFactory {
         driver.get(url);
         return driver;
 
-    }
-
-    @Test
-    public void test(){
-        startBrowser("chrome", "https://ndosisimplifiedautomation.vercel.app/");
     }
 
 }
