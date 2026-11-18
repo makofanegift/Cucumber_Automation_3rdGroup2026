@@ -1,4 +1,6 @@
+@login
 Feature: Login
+
   Scenario Outline: Login to Ndosi Automation Webside
     Given I am on home page
     And I click login button

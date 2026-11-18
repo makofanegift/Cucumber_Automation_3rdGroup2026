@@ -10,27 +10,26 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 public class HomePage {
 
     WebDriver driver;
-    private final WebDriverWait wait;
 
     @FindBy(xpath = "//span[text()='Login']")
-    WebElement loginButton;
+    WebElement loginButtonByxpath;
 
     public HomePage (WebDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        PageFactory.initElements(driver, this);
 
     }
     public void verifyHomePageIsDisplayed(){
-        wait.until(ExpectedConditions.elementToBeClickable(loginButton));
-        loginButton.isDisplayed();
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(visibilityOf(loginButtonByxpath));
+        loginButtonByxpath.isDisplayed();
 
     }
     public void clickLoginButton(){
-        loginButton.click();
+        loginButtonByxpath.click();
 
     }
 
