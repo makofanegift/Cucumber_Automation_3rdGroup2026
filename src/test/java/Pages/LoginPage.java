@@ -34,6 +34,7 @@ public class LoginPage {
     }
 
     public void enterUsername(String username){
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(visibilityOf(usernameLocatorById));
         usernameLocatorById.sendKeys(username);
     }
 
@@ -43,10 +44,6 @@ public class LoginPage {
 
     public void clickLoginSubmitButton(){
         loginSubmitButtonById.click();
-    }
-    public void verifyUserLoggedInSuccessfully(){
-        new WebDriverWait(driver, Duration.ofSeconds(10)).until(visibilityOf(verifySuccessfulLoginXpath));
-        verifySuccessfulLoginXpath.isDisplayed();
     }
 
 }
