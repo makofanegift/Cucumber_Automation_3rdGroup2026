@@ -38,4 +38,8 @@ public class LoginSteps extends Base {
         dashboardPage.verifyUserLoggedInSuccessfully();
     }
 
+//    @Then("I should get an error message")
+//    public void iShouldGetAnErrorMessage() {
+//
+//    }
 }
