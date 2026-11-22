@@ -1,7 +1,7 @@
 @login
 Feature: Login
 
-  Scenario Outline: Login to Ndosi Automation Webside
+  Scenario Outline: Login to Ndosi Automation Webside with valid username and password
     Given I am on home page
     And I click login button
     And I enter username <username>
@@ -14,17 +14,18 @@ Feature: Login
       | username | password |
       | admin@gmail.com | @12345678 |
 
-#  Scenario Outline: Verify Menu button exist
-#    Given I am on hom page
+#  Scenario Outline: Login to Ndosi Automation Webside with invalid username and password
+#    Given I am on home page
 #    And I click login button
 #    And I enter username <username>
 #    And I enter password <password>
 #    When I click submit button
-#    Then I should be logged in successfully
-#    And Verify Menu button exist
+#    Then I should get an error message
 #
 #
 #    Examples:
 #      | username | password |
-#      | admin@gmail.com | @12345678 |
+#      | admin1@gmail.com | @12345678 |
+
+
 

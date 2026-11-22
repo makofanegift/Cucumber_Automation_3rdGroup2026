@@ -20,7 +20,8 @@ public class LoginSteps extends Base {
     }
     @And("I enter username (.*)$")
     public void i_enter_username(String username) {
-         loginPage.enterUsername(username);
+
+        loginPage.enterUsername(username);
     }
     @And("I enter password (.*)$")
     public void i_enter_password(String password) {
@@ -34,7 +35,11 @@ public class LoginSteps extends Base {
     }
     @Then("I should be logged in successfully")
     public void i_should_be_logged_in_successfully() {
-        loginPage.verifyUserLoggedInSuccessfully();
+        dashboardPage.verifyUserLoggedInSuccessfully();
     }
 
+//    @Then("I should get an error message")
+//    public void iShouldGetAnErrorMessage() {
+//
+//    }
 }
