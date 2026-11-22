@@ -1,5 +1,6 @@
 package Pages;
 
+import Steps.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,15 +13,13 @@ import java.time.Duration;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
-public class HomePage {
-
-    WebDriver driver;
+public class HomePage extends BasePage {
 
     @FindBy(xpath = "//span[text()='Login']")
     WebElement loginButtonByxpath;
 
     public HomePage (WebDriver driver){
-        this.driver = driver;
+        super(driver);
 
     }
     public void verifyHomePageIsDisplayed(){
@@ -29,7 +28,8 @@ public class HomePage {
 
     }
     public void clickLoginButton(){
-        loginButtonByxpath.click();
+        click(loginButtonByxpath);
+
 
     }
 
